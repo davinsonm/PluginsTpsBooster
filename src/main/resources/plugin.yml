@@ -1,0 +1,49 @@
+name: PluginTpsBooster
+version: 3.3
+main: me.Davinsonm.PluginTpsBooster.PluginTpsBooster
+depend: [PlaceholderAPI]
+description: Plugin para boosters y Training Points en Dragon Block C
+author: Davinsonm
+commands:
+  tpgive:
+    description: Da Training Points a un jugador.
+    usage: /tpgive <jugador> <cantidad> [comentario]
+    permission: PluginTpsBooster.tpgive
+  dartps:
+    description: Otorga Training Points con boosters aplicados.
+    usage: /dartps <jugador> <cantidad>
+    permission: PluginTpsBooster.dartps
+  booster:
+    description: Activa un booster global, personal o pasivo.
+    usage: /booster <tipo> <multiplicador> <tiempo> [nombre]
+    permission: PluginTpsBooster.booster
+  boosterstop:
+    description: Desactiva un booster global, personal o pasivo.
+    usage: /boosterstop <tipo> [nombre]
+    permission: PluginTpsBooster.booster.stop
+  dartpsbooster:
+    description: Recarga la configuración del plugin.
+    usage: /dartpsbooster reload
+    permission: PluginTpsBooster.reload
+permissions:
+  PluginTpsBooster.tpgive:
+    description: Permite usar /tpgive.
+    default: op
+  PluginTpsBooster.dartps:
+    description: Permite usar /dartps.
+    default: op
+  PluginTpsBooster.booster:
+    description: Permite activar boosters.
+    default: op
+  PluginTpsBooster.booster.stop:
+    description: Permite detener boosters.
+    default: op
+  PluginTpsBooster.reload:
+    description: Permite recargar el plugin.
+    default: op
+  PluginTpsBooster.booster.passive.*:
+    description: Permite acceder a cualquier booster pasivo.
+    default: false
+  PluginTpsBooster.booster.passive.<id>:
+    description: Permite acceder a un booster pasivo específico.
+    default: false

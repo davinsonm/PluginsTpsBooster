@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>PluginTpsBooster</artifactId>
+    <groupId>me.Davinsonm</groupId>
+    <version>3.3</version>
+    <packaging>jar</packaging>
+
+    <name>UchuumanusTPs</name>
+    <description>asignacion de tps mas simplificada y limpia, ahora con funcion de boosters</description>
+
+    <properties>
+    <DragonBlockC-systemPath>C:\Users\Davinsonm\Desktop\bukkit\mods\DragonBlockC-v1.4.85.jar</DragonBlockC-systemPath>
+    <JRMCore-systemPath>C:\Users\Davinsonm\Desktop\bukkit\mods\JRMCore-v1.3.51.jar</JRMCore-systemPath>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bukkit.version>1.7.10-R0.1-SNAPSHOT</bukkit.version>
+    </properties>
+
+   <dependencies>
+    <dependency>
+        <groupId>org.bukkit</groupId>
+        <artifactId>craftbukkit</artifactId>
+        <version>1.7.10-R0.1-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+     <dependency>
+         <groupId>me.clip</groupId>
+          <artifactId>placeholderapi</artifactId>
+          <version>2.11.6</version>
+         <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/releases/</url>
+        </repository>
+    </repositories>
+</project>
